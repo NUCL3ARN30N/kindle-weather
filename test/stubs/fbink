@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "fbink $*" >> "$STUB_STATE/calls"
+if [ "$1" = "-e" ]; then
+    if [ "${STUB_ROTA:-0}" = 1 ]; then echo "viewWidth=1448;viewHeight=1072;currentRota=1;deviceName='Kindle Basic 4';"
+    else echo "viewWidth=1072;viewHeight=1448;currentRota=0;deviceName='Kindle Basic 4';"; fi
+fi
+exit 0

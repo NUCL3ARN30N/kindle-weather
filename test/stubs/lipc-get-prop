@@ -1,0 +1,8 @@
+#!/bin/sh
+case "$*" in
+  *blanket*load*) cat "$STUB_STATE/blanket" ;;
+  *cmState*) echo CONNECTED ;;
+  *battLevel*) echo 82 ;;
+  *wirelessEnable*) echo 1 ;;
+  *powerd*state*) echo screenSaver ;;
+esac

@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "xrefresh $*" >> "$STUB_STATE/calls"
+[ "$1" = "-e" ] && echo "viewWidth=1072;viewHeight=1448;"
+exit 0

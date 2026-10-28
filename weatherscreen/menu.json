@@ -1,0 +1,26 @@
+{
+	"items": [
+	{
+		"name": "Weather Screensaver",
+		"priority": 0,
+		"items": [
+			{ "name": "Enable", "priority": 1, "action": "/bin/sh", "params": "/mnt/us/extensions/weatherscreen/bin/ctl.sh enable", "exitmenu": false },
+			{ "name": "Disable (restore stock screensaver)", "priority": 2, "action": "/bin/sh", "params": "/mnt/us/extensions/weatherscreen/bin/ctl.sh disable", "exitmenu": false },
+			{ "name": "Refresh now", "priority": 3, "action": "/bin/sh", "params": "/mnt/us/extensions/weatherscreen/bin/ctl.sh refresh", "exitmenu": false },
+			{ "name": "Preview (10 s)", "priority": 4, "action": "/bin/sh", "params": "/mnt/us/extensions/weatherscreen/bin/ctl.sh preview", "exitmenu": true },
+			{
+				"name": "Orientation",
+				"priority": 5,
+				"items": [
+					{ "name": "Auto (follow the Kindle)", "priority": 1, "action": "/bin/sh", "params": "/mnt/us/extensions/weatherscreen/bin/ctl.sh orientation auto", "exitmenu": true },
+					{ "name": "Portrait", "priority": 2, "action": "/bin/sh", "params": "/mnt/us/extensions/weatherscreen/bin/ctl.sh orientation portrait", "exitmenu": true },
+					{ "name": "Landscape", "priority": 3, "action": "/bin/sh", "params": "/mnt/us/extensions/weatherscreen/bin/ctl.sh orientation landscape", "exitmenu": true },
+					{ "name": "Landscape (flipped)", "priority": 4, "action": "/bin/sh", "params": "/mnt/us/extensions/weatherscreen/bin/ctl.sh orientation landscape-flipped", "exitmenu": true }
+				]
+			},
+			{ "name": "Status", "priority": 6, "action": "/bin/sh", "params": "/mnt/us/extensions/weatherscreen/bin/ctl.sh status", "exitmenu": false },
+			{ "name": "Save log to USB drive", "priority": 7, "action": "/bin/sh", "params": "/mnt/us/extensions/weatherscreen/bin/ctl.sh log", "exitmenu": false }
+		]
+	}
+	]
+}

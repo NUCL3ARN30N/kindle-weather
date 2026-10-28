@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "start $*" >> "$STUB_STATE/calls"
+exit 1

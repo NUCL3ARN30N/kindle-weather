@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "lipc-set-prop $*" >> "$STUB_STATE/calls"
+case "$*" in
+  *blanket\ unload*) M="${*##* }"; grep -vx "$M" "$STUB_STATE/blanket" > "$STUB_STATE/b2"; mv "$STUB_STATE/b2" "$STUB_STATE/blanket" ;;
+  *blanket\ load*) echo "${*##* }" >> "$STUB_STATE/blanket" ;;
+esac
